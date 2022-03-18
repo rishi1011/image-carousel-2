@@ -16,14 +16,14 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 prev.addEventListener('click', () => {
     if (counter <= 0) return;
-    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    carouselSlide.style.transition = 'transform 0.7s ease-in-out';
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
 next.addEventListener('click', () => {
     if (counter >= images.length - 1) return;
-    carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+    carouselSlide.style.transition = 'transform 0.7s ease-in-out';
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
